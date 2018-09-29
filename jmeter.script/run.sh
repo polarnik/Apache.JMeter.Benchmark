@@ -7,17 +7,17 @@ RUN_DATE=`date +'%Y_%m_%d_%H_%M_%S'`
 
 #export JVM_ARGS=-Djavax.net.debug=all
 export JVM_ARGS="-Dfile.encoding=UTF-8"
-export JVM_ARGS="$JVM_ARGS -Dcom.sun.management.jmxremote.port=9010 -Dcom.sun.management.jmxremote.rmi.port=9011 -Dcom.sun.management.jmxremote.local.only=true -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
-export JVM_ARGS="$JVM_ARGS -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints"
+#export JVM_ARGS="$JVM_ARGS -Dcom.sun.management.jmxremote.port=9010 -Dcom.sun.management.jmxremote.rmi.port=9011 -Dcom.sun.management.jmxremote.local.only=true -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
+#export JVM_ARGS="$JVM_ARGS -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints"
 
-export JVM_ARGS="$JVM_ARGS -XX:StartFlightRecording=delay=10s,duration=120s,name=Profile-Test,filename=Profile-Test2.jfr,settings=Profile-Test.jfc"
+#export JVM_ARGS="$JVM_ARGS -XX:StartFlightRecording=delay=10s,duration=120s,name=Trace-Apache.JMeter,filename=logs/""$RUN_DATE""-trace-script.jfr,settings=jmc/Trace.jfc"
 
-#JAVA_HOME=
-#JRE_HOME=
+JAVA_HOME="/usr/java/jdk1.8.0_181-amd64/"
+JRE_HOME="/usr/java/jdk1.8.0_181-amd64/"
 export GC_ALGO="-XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:G1ReservePercent=20"
 export HEAP="-Xms1g -Xmx16g -XX:MaxMetaspaceSize=256m -Xss10m"
 
-export VERBOSE_GC="-verbose:gc -Xloggc:gc_jmeter_%p.log -XX:+PrintGCDetails -XX:+PrintGCCause -XX:+PrintTenuringDistribution -XX:+PrintHeapAtGC -XX:+PrintGCApplicationConcurrentTime -XX:+PrintAdaptiveSizePolicy -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCDateStamps"
+# export VERBOSE_GC="-verbose:gc -Xloggc:gc_jmeter_%p.log -XX:+PrintGCDetails -XX:+PrintGCCause -XX:+PrintTenuringDistribution -XX:+PrintHeapAtGC -XX:+PrintGCApplicationConcurrentTime -XX:+PrintAdaptiveSizePolicy -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCDateStamps"
 
 RUN_OPTS=""
 #RUN_OPTS="$RUN_OPTS --nongui"
