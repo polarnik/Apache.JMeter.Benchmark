@@ -137,7 +137,7 @@
 
     <event path="vm/gc/detailed/object_count">
       <setting name="enabled">true</setting>
-      <setting name="period">100 ms</setting>
+      <setting name="period">10 s</setting>
     </event>
 
     <event path="vm/gc/configuration/gc">
