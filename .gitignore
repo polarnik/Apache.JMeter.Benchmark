@@ -24,3 +24,5 @@ hs_err_pid*
 
 jmeter.script/logs/
 jmeter.script/reports/
+jmeter.script/*.hprof
+
