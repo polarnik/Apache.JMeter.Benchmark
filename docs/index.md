@@ -95,7 +95,6 @@ java.lang.OutOfMemoryError: Java heap space
 Dumping heap to java_pid21386.hprof ...
 Heap dump file created [2723488978 bytes in 41,828 secs]
 Killed
-
 ```
 
 Что тут можно сделать:

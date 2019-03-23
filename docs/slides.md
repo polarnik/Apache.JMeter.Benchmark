@@ -1,53 +1,66 @@
-<!-- $size: 16:9 -->
-<!-- prerender: true -->
+-----------
+marp: true
+theme: gaia
 
-<style>
-  .slide {
-  	justify-content:  start !important;
-  	padding-top: 2em !important;
+
+paginate: false
+$size: 16:9
+prerender: true
+
+style: |
+  section {
+	  padding: 10px;
   }
-  
-  
-  .slide h1 {
-  	justify-content:  center !important;
-    text-align: center;
-  }
-  
-</style>
-<span class="main"></span>
+
+footer: Ускоряем Apache.JMeter
+-----------
+<!-- _class: gaia lead -->
+
+<!-- _footer: Смирнов Вячеслав -->
 
 # Ускоряем Apache.JMeter
 
 
-> «Ты можешь быстрее. Предела нет. Знай: ты можешь! Будь уверен.»
-(Морфеус, «Матрица»).
+> Ты можешь быстрее. Предела нет. Знай: ты можешь! Будь уверен.
 
+(Морфеус, «Матрица»)
 
 ---
-<!-- page_number: true -->
 
+#### О себе
 
+# Люблю Apache.JMeter и нагрузку
 
-## О себе
+Вячеслав Смирнов. Эксперт по тестированию в Райффайзенбанк. 10 лет в профессии.
 
-### Вячеслав Смирнов
+Ускоряю онлайн-банк: 
+:link: rbo.raiffeisen.ru
 
-Эксперт по тестированию в Райффайзенбанк
-
-Занимаюсь тестированием производительности
-
-Читаю почту:
-:email: owasp@yandex.ru
+Помогаю коллегам:
+:link: t.me/qa_load
 
 Публикую код:
-:link: https://github.com/polarnik/
-
+:link: github.com/polarnik
 
 ---
 
+![bg](image/turbo.1.jpg)
+
+---
+
+![bg](image/turbo.jpg)
+
+![width:300px](image/JMeterLogo.svg)
+
+---
+# Для друзей и коллег
+
+![bg contain](image/why.png)
+
+---
 <!-- footer: Ускоряем Apache.JMeter -->
 
-<h1 class="test">Apache.JMeter можно и нужно ускорять</h1>
+# Apache.JMeter можно и нужно ускорять
 
 ---
 <!-- footer: Ускоряем Apache.JMeter -->
@@ -61,11 +74,11 @@
 
 
 ---
-<!-- footer: Ускоряем Apache.JMeter -->
+<!-- _footer: ' -->
 
 ## Варианты подачи нагрузки из JMeter
 
-![40% center](image/JMeter.load.variants.png)
+![bg](image/JMeter.load.variants.png)
 
 
 ---
